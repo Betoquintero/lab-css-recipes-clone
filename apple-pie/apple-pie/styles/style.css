@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    line-height: 10em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: left;
+    line-height: 1em;
+}
+
+#intro {
+    background-image: url(/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding-top: 50px;
+    position: relative;    
+    color: rgb(255, 255, 255);
+    }
+
+.testimony {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.middle-images {
+     display:flex;
+     justify-content: center;
+}
+
+hr{
+    border-color: #000000;
+    border-width: 1px;
+  }
+
+#ingredients {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#ingredients .list {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#directions {
+    margin-left:250px;
+    padding: 20px;
+}
+
+.recipe {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+ol {
+    counter-reset: list;
+  }
+  ol > li {
+    list-style: none;
+  }
+  ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+  }
+
