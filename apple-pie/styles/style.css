@@ -18,7 +18,7 @@ h2 {
 }
 
 #intro {
-    background-image: url(/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg);
+    background-image: url(../images/apple-pie.jpg);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,9 +40,12 @@ h2 {
      justify-content: center;
 }
 
-hr{
-    border-color: #000000;
-    border-width: 1px;
+hr {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
 #ingredients {
@@ -69,12 +72,12 @@ hr{
 
 ol {
     counter-reset: list;
-  }
+}
   ol > li {
     list-style: none;
-  }
+}
   ol > li:before {
     content: counter(list) ") ";
     counter-increment: list;
-  }
+}
 
